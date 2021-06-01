@@ -1,0 +1,46 @@
+$white:#F4F1DE; 
+$red:#e07a5f;
+$blue:#3d405b;
+$green:#81b29a;
+$yellow:#f2cc8f;
+
+
+
+
+.header{
+    background-color: $red;
+    display: flex;
+    align-items: center;
+    &__logo{
+        width: 200px;
+    }
+}
+.nav-panel{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin-left: 5%;
+    &__element{
+        display: flex;
+        background-color: $yellow;
+        margin-right: 10%;
+        text-decoration: none;
+        color: black;
+        width: 200px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        
+        &:hover{background-color: #b89968;
+                color:$white
+
+        }
+    }
+}
+@media (max-width:574px){
+    .header{
+        &__logo{
+            width: 100px;
+        }
+    }
+}
