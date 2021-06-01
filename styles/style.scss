@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 $white:#F4F1DE; 
 $red:#e07a5f;
 $blue:#3d405b;
@@ -5,32 +7,42 @@ $green:#81b29a;
 $yellow:#f2cc8f;
 
 
-
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: $white;
+    
+}
 
 .header{
     background-color: $red;
     display: flex;
     align-items: center;
+    justify-content: space-between; 
     &__logo{
         width: 200px;
+        margin-right: 5%;
+    }
+    &__button{
+        font-family: 'Oswald', sans-serif;
+        margin-right: 5%;
     }
 }
 .nav-panel{
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: space-around;
-    margin-left: 5%;
     &__element{
         display: flex;
         background-color: $yellow;
         margin-right: 10%;
         text-decoration: none;
-        color: black;
+        color: $blue;
         width: 200px;
         height: 30px;
         align-items: center;
         justify-content: center;
-        
+        transition-property:color, background-color;
+        transition-duration: .3s;
         &:hover{background-color: #b89968;
                 color:$white
 
