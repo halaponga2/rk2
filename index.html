@@ -8,15 +8,61 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <img class="header__logo" src="images/small-logo.png" alt="logo">
         <nav class="nav-panel">
-            <a class="nav-panel__element" href="">lorem</a>
-            <a class="nav-panel__element" href="">ipsum</a>
-            <a class="nav-panel__element" href="">kekw</a>
+            <a class="nav-panel__element" href="#header">Хедер</a>
+            <a class="nav-panel__element" href="#selection">Подборка</a>
+            <a class="nav-panel__element" href="#footer">Футер</a>
         </nav>
         <button class="header__button">Смена темы</button>
     </header>
-    <main></main>
+    <main>
+        <h1 class="h1-heading">Веб-технологии</h1>
+        <object class="svg" width="100" height="100" data="images/sun.svg" type="image/svg+xml"></object>
+        <section>
+            <h2 class="h2-heading">Подборка технологий и фреймворков</h2>
+            <div class="selection" id="selection">
+                <div class="card">
+                    <div>
+                        <h3 class="h3-heading">Фреймворки для frontend</h3>
+                        <img class="card__picture" src="images/front.PNG" alt="frontend-image">
+                        <p class="card__text">Фронтенд — все, что браузер может читать, выводить на экран и / или запускать</p>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__item">Angular</li>
+                        <li class="card__item">React</li>
+                        <li class="card__item">Vue</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3 class="h3-heading">Фреймворки для backend</h3>
+                        <img class="card__picture" src="images/back.PNG" alt="backend-image">
+                        <p class="card__text">Бэкенд — все, что работает на сервере, то есть «не в браузере» или «на компьютере, подсоединенном к сети (обычно к Интернету), который отвечает на сообщения от других компьютеров».</p>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__item">Express</li>
+                        <li class="card__item">Django</li>
+                        <li class="card__item">Laravel</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3 class="h3-heading">Технологии для веб-разработки</h3>
+                        <img class="card__picture" src="images/tehnologies.PNG" alt="tehnologies-image">
+                        <p class="card__text">Веб-разработка — процесс создания веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера.</p>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__item">CSS / HTML</li>
+                        <li class="card__item">PHP</li>
+                        <li class="card__item">JavaScript</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer id="footer"><p>Лобов Иван Кириллович 201-322 01.06.2021</p></footer>
 </body>
 </html>
